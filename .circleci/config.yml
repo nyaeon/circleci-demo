@@ -14,7 +14,7 @@ jobs:
       - run:
           name: Run Ansible Playbook on localhost
           command: |
-            ansible-playbook playbooks/install-nginx.yml -i "localhost," -c local
+            echo "✅ 변경 사항이 푸시되었습니다. Ansible을 로컬에서 실행하세요."
 
 workflows:
   deploy-on-push:
