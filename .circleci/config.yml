@@ -6,7 +6,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      - run: echo "CircleCI 동작 확인"
+      - run: echo "CircleCI 동작 확인2"
 workflows:
   build-and-test:
     jobs:
