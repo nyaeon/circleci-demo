@@ -1,0 +1,13 @@
+# .circleci/config.yml
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run: echo "CircleCI 동작 확인"
+workflows:
+  build-and-test:
+    jobs:
+      - build
